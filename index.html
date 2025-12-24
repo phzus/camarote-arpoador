@@ -17,7 +17,7 @@
   <!-- Side Menu Panel -->
   <nav class="side-menu" id="sideMenu">
     <div class="side-menu-header">
-      <img src="assets/images/logo camarote.svg" alt="Camarote Arpoador" class="side-menu-logo">
+      <img src="assets/images/logo-camarote-dark.svg" alt="Camarote Arpoador" class="side-menu-logo">
       <button class="side-menu-close" onclick="toggleMenu()">&times;</button>
     </div>
 
@@ -68,9 +68,6 @@
   <main>
     <!-- Hero Section -->
     <section class="hero" id="hero">
-      <video class="hero-video-bg" autoplay muted loop playsinline>
-        <source src="assets/images/hero_bg.mp4" type="video/mp4">
-      </video>
       <div class="hero-overlay"></div>
 
       <!-- Top Container: Header/Logos/Menu -->
@@ -133,9 +130,10 @@
       <div class="events-container">
         <div class="events-header">
           <p class="events-subtitle">Eventos</p>
-          <div style="display: flex; justify-content: space-between; align-items: flex-end;">
-            <h2 class="events-title">Próximos <span>Eventos</span></h2>
-            <p class="events-detail">São 5 dias de carnaval com essa</p>
+          <div class="events-title-wrapper">
+            <h2 class="events-title">Próximos <span class="highlight-blue">Eventos</span></h2>
+            <p class="events-detail">Nossa jornada vai muito além da avenida. Preparamos uma programação
+              completa para você viver o Carnaval em cada detalhe.</p>
           </div>
         </div>
 
@@ -143,28 +141,28 @@
           <div class="event-item">
             <div class="event-info">
               <h3>Pré-Carnaval</h3>
-              <p>20.02.2026</p>
+              <p>30.01, 01, 07, 08 e 09.02</p>
             </div>
             <a href="#" class="event-link">Saiba Mais</a>
           </div>
           <div class="event-item">
             <div class="event-info">
               <h3>Carnaval</h3>
-              <p>20.02.2026</p>
+              <p>13, 14, 15, 16, 17 e 21.02</p>
             </div>
             <a href="#" class="event-link">Saiba Mais</a>
           </div>
           <div class="event-item">
             <div class="event-info">
               <h3>Feijoada Carioca</h3>
-              <p>20.02.2026</p>
+              <p>18.02</p>
             </div>
             <a href="#" class="event-link">Saiba Mais</a>
           </div>
           <div class="event-item">
             <div class="event-info">
               <h3>Baile de Máscaras</h3>
-              <p>20.02.2026</p>
+              <p>20.02</p>
             </div>
             <a href="#" class="event-link">Saiba Mais</a>
           </div>
@@ -176,7 +174,7 @@
     <section class="history-section" id="history">
       <div class="history-header" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
         <p class="section-label">Nossa História</p>
-        <h2 class="history-title">Conheça o <span class="history-highlight">Maior<br>Camarote</span> da Sapucaí</h2>
+        <h2 class="history-title">Conheça o <span class="highlight-blue">Maior</span><br>Camarote da Sapucaí</h2>
       </div>
 
       <!-- History Carousel (Full-Bleed) -->
@@ -209,7 +207,7 @@
     <section class="lineup-section" id="lineup">
       <div class="lineup-container" style="max-width: 1200px; margin: 0 auto;">
         <p class="lineup-subtitle">Lineup Completa</p>
-        <h2 class="lineup-title">Artistas Confirmados</h2>
+        <h2 class="lineup-title"><span class="highlight-blue">Artistas</span> Confirmados</h2>
 
         <div class="lineup-grid">
           <!-- Row 1 -->
@@ -217,26 +215,27 @@
             <div class="day-date">13.02 SEX</div>
             <div class="day-info">Desfile do Grupo de Acesso</div>
             <div class="artist-list">
-              <span class="artist-main">Filipe Ret</span><br>
-              <span class="artist-sub">Fica Comigo</span><br>
-              <span class="artist-sub">Maguzinho</span>
+              <span class="lineup-artist">Filipe Ret</span>
+              <span class="lineup-artist">Fica Comigo</span>
+              <span class="lineup-artist">Maguzinho</span>
             </div>
           </div>
           <div class="lineup-day">
             <div class="day-date">14.02 SÁB</div>
             <div class="day-info">Desfile do Grupo de Acesso</div>
             <div class="artist-list">
-              <span class="artist-main">Raça Negra</span><br>
-              <span class="artist-sub">Maguzinho</span>
+              <span class="lineup-artist">Raça Negra</span>
+              <span class="lineup-artist">Kevin O Chris</span>
+              <span class="lineup-artist">Maguzinho</span>
             </div>
           </div>
           <div class="lineup-day">
             <div class="day-date">15.02 DOM</div>
             <div class="day-info">Desfile do Grupo Especial</div>
             <div class="artist-list">
-              <span class="artist-main">Ferrugem</span><br>
-              <span class="artist-sub">Cat Dealers</span><br>
-              <span class="artist-sub">Maguzinho</span>
+              <span class="lineup-artist">Ferrugem</span>
+              <span class="lineup-artist">Cat Dealers</span>
+              <span class="lineup-artist">Maguzinho</span>
             </div>
           </div>
 
@@ -245,26 +244,28 @@
             <div class="day-date">16.02 SEG</div>
             <div class="day-info">Desfile do Grupo Especial</div>
             <div class="artist-list">
-              <span class="artist-main">Belo</span><br>
-              <span class="artist-sub">Buchecha</span><br>
-              <span class="artist-sub">Maguzinho</span>
+              <span class="lineup-artist">Belo</span>
+              <span class="lineup-artist">Buchecha</span>
+              <span class="lineup-artist">Maguzinho</span>
             </div>
           </div>
           <div class="lineup-day">
             <div class="day-date">17.02 TER</div>
             <div class="day-info">Desfile das Campeãs</div>
             <div class="artist-list">
-              <span class="artist-main">Pixote</span><br>
-              <span class="artist-sub">Maguzinho</span>
+              <span class="lineup-artist">Pixote</span>
+              <span class="lineup-artist">Ludmilla</span>
+              <span class="lineup-artist">Maguzinho</span>
             </div>
           </div>
           <div class="lineup-day">
             <div class="day-date">21.02 SÁB</div>
             <div class="day-info">Sábado das Campeãs</div>
             <div class="artist-list">
-              <span class="artist-main">Sorriso Maroto</span><br>
-              <span class="artist-sub">Kevin O Chris</span><br>
-              <span class="artist-sub">Capilé</span>
+              <span class="lineup-artist">Sorriso Maroto</span>
+              <span class="lineup-artist">Felipe Amorim</span>
+              <span class="lineup-artist">Capilé</span>
+              <span class="lineup-artist">Maguzinho</span>
             </div>
           </div>
         </div>
@@ -295,7 +296,7 @@
         <div class="partners-header-row">
           <div class="partners-title-block">
             <span class="partners-micro">MARCAS PARCEIRAS</span>
-            <h2 class="partners-headline">JUNTO COM A GENTE</h2>
+            <h2 class="partners-headline"><span class="highlight-blue">Junto</span> com a Gente</h2>
           </div>
           <div class="partners-description">
             <p>Nossa trajetória é feita de colaborações com marcas que compartilham visão, paixão e vontade de ir além.
@@ -313,7 +314,7 @@
           <img src="assets/images/Logo patrocinadores/Logo UAU CAIXA - logo certa.png" alt="UAU Caixa"
             class="partner-logo partner-logo-uau">
 
-          <div class="partner-divider"></div>
+          <div class="partner-divider hidden-mobile"></div>
 
           <img src="assets/images/Logo patrocinadores/LogoEletromidia - logo certa.png" alt="Eletromidia"
             class="partner-logo partner-logo-eletromidia">
