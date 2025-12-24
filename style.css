@@ -45,6 +45,10 @@
     color: var(--highlight-blue) !important;
 }
 
+.desk-block {
+    display: block;
+}
+
 /* Reset */
 * {
     margin: 0;
@@ -497,7 +501,7 @@ a {
 .events-section {
     background-color: #fff;
     color: #000;
-    padding: 120px 20px;
+    padding: 120px 0;
 }
 
 .events-container {
@@ -835,7 +839,7 @@ a {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 80px;
 }
 
 /* Partners Header Row */
@@ -870,7 +874,7 @@ a {
     text-transform: uppercase;
     line-height: 0.9;
     color: #000;
-    margin: 0;
+    margin: 0 0 -4px 0;
 }
 
 .partners-description {
@@ -949,6 +953,10 @@ a {
 
     .hidden-mobile {
         display: none !important;
+    }
+
+    .desk-block {
+        display: inline;
     }
 
     /* ============================== */
@@ -1113,7 +1121,7 @@ a {
     }
 
     .history-text {
-        max-width: 100%;
+        max-width: 92%;
         font-size: 4.5vw;
     }
 
