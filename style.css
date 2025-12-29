@@ -287,7 +287,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     padding: 40px 40px;
-    background: #000 url('assets/images/HERO-BG-DESK.png') no-repeat center;
+    background: #000 url('assets/images/HERO-BG-DESK.webp') no-repeat center;
     background-size: cover;
 }
 
