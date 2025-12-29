@@ -1,6 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Camarote Arpoador iniciado');
 
+    // Force Video Autoplay (especially for iOS)
+    const heroVideo = document.getElementById('heroVideo');
+    if (heroVideo) {
+        heroVideo.play().catch(error => {
+            console.log("Autoplay blocked or failed:", error);
+        });
+    }
+
     // Countdown Logic
     const targetDate = new Date('February 13, 2026 00:00:00').getTime();
 
