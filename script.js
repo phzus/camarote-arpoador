@@ -67,7 +67,6 @@ document.addEventListener('DOMContentLoaded', () => {
         spaceBetween: 20,
         loop: true,
         speed: 5000,
-        allowTouchMove: false,
         autoplay: {
             delay: 0,
             disableOnInteraction: false,
@@ -90,7 +89,6 @@ document.addEventListener('DOMContentLoaded', () => {
         spaceBetween: 20,
         loop: true,
         speed: 5000,
-        allowTouchMove: false,
         autoplay: {
             delay: 0,
             disableOnInteraction: false,
