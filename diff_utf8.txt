@@ -1,0 +1,31 @@
+﻿diff --git a/style.css b/style.css
+index 6e5340e..acbe004 100644
+--- a/style.css
++++ b/style.css
+@@ -501,7 +501,7 @@ a {
+ .events-section {
+     background-color: #fff;
+     color: #000;
+-    padding: 120px 20px;
++    padding: 120px 0;
+ }
+ 
+ .events-container {
+@@ -839,7 +839,7 @@ a {
+     margin: 0 auto;
+     display: flex;
+     flex-direction: column;
+-    gap: 60px;
++    gap: 80px;
+ }
+ 
+ /* Partners Header Row */
+@@ -874,7 +874,7 @@ a {
+     text-transform: uppercase;
+     line-height: 0.9;
+     color: #000;
+-    margin: 0;
++    margin: 0 0 -4px 0;
+ }
+ 
+ .partners-description {
