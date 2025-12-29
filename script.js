@@ -1,16 +1,38 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Camarote Arpoador iniciado');
 
-    // Force Video Autoplay (especially for iOS)
+    // --- Robust iOS Video Autoplay Fix ---
     const heroVideo = document.getElementById('heroVideo');
     if (heroVideo) {
-        heroVideo.play().catch(error => {
-            console.log("Autoplay blocked or failed:", error);
-        });
+        // Force critical properties on the DOM object
+        heroVideo.muted = true;
+        heroVideo.defaultMuted = true;
+        heroVideo.playsInline = true;
+
+        // Enforcement for older WebKit
+        heroVideo.setAttribute('playsinline', 'true');
+        heroVideo.setAttribute('webkit-playsinline', 'true');
+
+        const attemptPlay = async () => {
+            try {
+                await heroVideo.play();
+                console.log("Video started successfully");
+            } catch (error) {
+                console.warn("Autoplay prevented by browser:", error);
+
+                // If it fails (e.g. Low Power Mode), we could show a play button,
+                // but for now, we'll log it. The unmute button already exists
+                // and can serve as a manual trigger for sound/play.
+            }
+        };
+
+        // Small timeout to ensure the DOM is painted (crucial for iOS)
+        setTimeout(attemptPlay, 150);
     }
+    // --------------------------------------
 
     // Countdown Logic
-    const targetDate = new Date('February 13, 2026 00:00:00').getTime();
+    const targetDate = new Date('2026-02-13T00:00:00').getTime();
 
     function updateCountdown() {
         const now = new Date().getTime();
